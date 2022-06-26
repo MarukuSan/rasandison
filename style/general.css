@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(240, 95, 50);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: medium;
+}
+
+#monLogo {
+    text-align: center;
+}
+
+.feuille {
+    background-color: burlywood;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 20px;
+}
+
+#maTete {
+    width: 100%;
+    height: auto;
+    clip-path: ellipse(33% 50%);
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.boite {
+    display: inline-flex;
+}
