@@ -80,7 +80,7 @@
                 <li>Réaliser un projet web</li>
                 <li>Virtualiser un environnement de travail</li>
                 <li>Notions de base en réseau</li>
-                <li>Concevoir et gérer un base de données</li>
+                <li>Concevoir et gérer une base de données</li>
                 <li>Traiter des données en python</li>
             </ul>
             <h2>Langages de programmation :</h2>
