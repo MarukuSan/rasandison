@@ -5,16 +5,17 @@
         <link rel="stylesheet" media="only screen and (min-width: 1300px)" href="./style/general.css" type="text/css">
         <link rel="stylesheet" media="only screen and (max-width: 1300px)" href="./style/phone.css" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="./js/apparence.js"></script>
         <title>Home Page</title>
     </head>
-    <body>
+    <body id="maPage">
         <header>
             <p id="monLogo"><a href="index.php">monLogo</a></p>
         </header>
 
         <section class="feuille">
             <nav id="menu">
-                <div><a href="index.php"><i class="material-icons">home</i>Home</a></div>
+                <div><a href="#" onClick="changeColor()"><i class="material-icons">brightness_medium</i>Mode sombre/clair</a></div>
                 <div><a href="https://github.com/MarukuSan" target="_blank"><i class="material-icons">card_travel</i>Portfolio</a></div>
                 <div><a href="#contacts"><i class="material-icons">contacts</i>Contacts</a></div>
             </nav>
@@ -26,20 +27,36 @@
                     <img id="maTete" src="images/marc.jpeg" alt="Photo de Marc">
                 </div>
                 <div style="width: auto;">
-                    <p id="phrasePresentation">
-                        <b>RASANDISON Marc Alan</b> <br/>  
-                        <b>Manager de Projet Informatique</b>
-                    </p>
+                    <p id="phrasePresentation"></p>
                 </div>
+
+                <script language="javascript">
+                    const titre = document.getElementById("phrasePresentation");
+                    const txt = "RASANDISON Marc";
+
+                    function typewriter(word, index) {
+                        if (index < word.length) {
+                            setTimeout(() => {
+                                titre.innerHTML += `<span><b>${word[index]}</b></span>`
+                                typewriter(txt, index+1)
+                            }, 200);
+                        }
+                    }
+
+                    setTimeout(() => {
+                        typewriter(txt, 0)
+                    }, 500);
+                </script>
+
             </div>
         </section>
 
         <section class="feuille">
             <h1>A propos de moi</h1>
             <p>
-                Etudiant entrant en 4ème année de Cycle Ingénierie Informatique à 
-                l'Ecole Hexagone, je suis à la recherche d'une alternance dans le 
-                domaine du Développement Informatique aux alentours de Clermont-Ferrand.
+                Etudiant en 4ème année de Cycle Ingénierie Informatique à l'Ecole Hexagone,
+                je suis actuellement Adjoint au Coordinateur Merge & Acquisition dans le domaine de l’Infrastructure Informatique,
+                en tant qu'alternant chez Michelin.
             </p>
             
         </section>

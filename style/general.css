@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color: darkorange;
+    color: rgb(248, 81, 47);
 }
 
 #monLogo {
@@ -103,12 +103,15 @@ ul {
     height: auto;
 }
 
+/* Foemate le format des liens vistés */
 a:visited {
     color: black;
     text-decoration: none;
 }
 
+/* Foemate le format des liens */
 a {
     color: black;
     text-decoration: none;
 }
+
